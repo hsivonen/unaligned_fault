@@ -19,9 +19,9 @@ struct Unalign<T>(T);
 
 #[inline(always)]
 pub unsafe fn load16_unaligned(ptr: *const u8) -> u8x16 {
-//    let loaded = *(ptr as *const Unalign<u8x16>);
-//    loaded.0
-    (*(ptr as *const Unalign<u8x16>)).0
+    let loaded = *(ptr as *const Unalign<u8x16>);
+    loaded.0
+//    (*(ptr as *const Unalign<u8x16>)).0
 }
 
 fn main() {
