@@ -1,0 +1,7 @@
+[package]
+name = "unaligned_fault"
+version = "0.1.0"
+authors = ["Henri Sivonen <hsivonen@hsivonen.fi>"]
+
+[dependencies]
+simd = { git = "https://github.com/huonw/simd" }
